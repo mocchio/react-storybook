@@ -19,6 +19,9 @@ const meta = {
         type: "select",
       },
     },
+    handleClick: {
+      action: "clicked",
+    },
   },
 } satisfies Meta<typeof Button>;
 
