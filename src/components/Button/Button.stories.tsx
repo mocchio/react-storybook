@@ -6,6 +6,11 @@ const meta = {
   title: "Common/Button",
   component: Button,
   tags: ["autodocs"],
+  parameters: {
+    actions: {
+      argTypesRegex: "^handle[A-Z].*",
+    },
+  },
   argTypes: {
     color: {
       options: ["default", "primary", "danger"],
