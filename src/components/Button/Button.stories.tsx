@@ -14,3 +14,8 @@ type Story = StoryObj<typeof Button>;
 export const HelloButton: Story = {
   render: () => <Button>Hello World</Button>,
 };
+
+// argsでもrender関数でも両方OK
+export const ClickButton: Story = {
+  args: { children: "click" },
+};
