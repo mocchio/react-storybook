@@ -6,6 +6,20 @@ const meta = {
   title: "Common/Button",
   component: Button,
   tags: ["autodocs"],
+  argTypes: {
+    color: {
+      options: ["default", "primary", "danger"],
+      control: {
+        type: "radio",
+      },
+    },
+    size: {
+      options: ["base", "sm", "lg"],
+      control: {
+        type: "select",
+      },
+    },
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
