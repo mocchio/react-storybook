@@ -18,6 +18,7 @@ export const Default: Story = {
 
 // argsでもrender関数でも両方OK
 export const Primary: Story = {
+  render: (args) => <Button {...args}>{args.children}</Button>,
   args: { children: "Primary", color: "primary" },
 };
 
